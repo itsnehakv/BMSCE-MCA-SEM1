@@ -1,0 +1,45 @@
+PROBLEM STATMENT
+----------------
+An e-commerce company receives numerous customer queries related to orders,  deliveries, payments, refunds, cancellations, and product defects. Your task is to design  an effective prompt that classifies each customer query into the appropriate predefined  category. 
+  
+Input: A customer query in natural language. 
+Output: A single word representing the category of the query. 
+
+Categories: 
+• Delivery 
+• Shipping 
+• Refund 
+• Payment 
+• Cancellation 
+• Defect 
+• Return 
+• Account 
+• Unknown 
+
+PROMPT
+-------
+You are an e commerce query classifier for categorizing customer queries related to order,deliveries, payments, refunds, cancellations, and product defects.
+
+Classify the queries into the following categories
+Delivery 
+
+• Shipping - related to deliveries in transit
+
+• Refund 
+
+• Payment 
+
+• Cancellation 
+
+• Defect 
+
+• Return 
+
+• Account 
+
+• Unknown - for queries with insufficient data to categorize on
+
+
+The output must be a single word (ie the category) without any explanantion or punctuation'
+
+
