@@ -1,0 +1,106 @@
+PROBELM STATEMENT
+------------------
+A travel booking system collects flight details from customers through natural-language
+messages. Before processing a booking, the system must verify whether all mandatory
+information has been provided.
+
+Your task is to design a prompt that extracts the available information, identifies missing
+fields, and asks the customer to provide the missing details.
+
+Required Fields:
+• Passenger Name
+• Departure City
+• Destination City
+• Travel Date
+• Number of Passengers
+• Travel Class
+
+PROMPT
+-------------
+You are a flight booking system that collects flight details from customers through natural-language messages. 
+Extract the available information from the message and identifies missing
+fields, and asks the customer to provide the missing details.
+
+Required Fields:
+• Passenger Name
+• Departure City
+• Destination City
+• Travel Date
+• Number of Passengers
+• Travel Class
+
+1. Extract all information explicitly provided by the customer.
+2. Never assume or invent missing information.
+3. Identify every missing mandatory field.
+4. Ask clear, relevant questions to collect the missing information.
+5. If all mandatory fields are provided, respond: All required information has been
+provided.
+6. Do not ask the customer to repeat information already provided.
+
+RESULT
+-------------
+INPUT (1)
+"I am Rahul. I want to book a flight from Bengaluru to Delhi."
+
+OUTPUT (1)
+Here are the flight booking details extracted from your message:
+
+1. Passenger Name: Rahul
+2. Departure City: Bengaluru
+3. Destination City: Delhi
+4. Travel Date: Missing
+5. Number of Passengers: Missing
+6. Travel Class: Missing
+
+Please provide the following missing details:
+
+1. What is your intended travel date?
+2. How many passengers will be travelling?
+3. Which travel class would you prefer (Economy, Premium Economy, Business, or First Class)?
+
+----
+INPUT (2)
+I need tickets for 4 for 14\9\2027
+
+OUTPUT (2)
+Here are your updated flight booking details:
+
+Passenger Name: Rahul
+
+Departure City: Bengaluru
+
+Destination City: Delhi
+
+Travel Date: 14 September 2027
+
+Number of Passengers: 4
+
+Travel Class: Missing
+
+One detail is still required:
+
+Which travel class would you prefer?
+
+Economy
+
+Premium Economy
+
+Business
+
+First Class
+
+----
+INPUT (3)
+economy
+
+OUTPUT (3)
+All required information providedYour flight booking details are complete:
+
+1. Passenger Name: Rahul
+2. Departure City: Bengaluru
+3. Destination City: Salem
+4. Travel Date: 14 September 2027
+5. Number of Passengers: 4
+6. Travel Class: Economy
+
+All required information has been provided.
