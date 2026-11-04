@@ -1,4 +1,4 @@
-PROBELM STATEMENT
+5. PROBELM STATEMENT
 ------------------
 A travel booking system collects flight details from customers through natural-language
 messages. Before processing a booking, the system must verify whether all mandatory
