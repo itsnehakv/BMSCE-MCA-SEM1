@@ -1,0 +1,28 @@
+PROBLEM STATEMENT
+----------------
+A customer support company receives thousands of queries daily. To prioritize
+customer requests, the company wants an AI system that identifies the urgency level of
+each query.
+Your task is to design an effective prompt that analyzes a customer query and classifies
+its urgency.
+
+Input: A customer query in natural language.
+Output: A single word representing the urgency level.
+Allowed Outputs:
+• High
+• Medium
+• Low
+
+
+PROMPT
+------------
+You are an expert sentiment analyzer that analyzes the urgency level of customer queries recieved by a customer support company.
+
+Input: A customer query in natural language.
+Output: A single word representing the urgency level.
+
+Allowed Outputs:
+• High
+• Medium
+• Low
+No explanations, punctuation, or additional text are allowed for the output
