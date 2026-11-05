@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Customer Feedback</title>
+
+    <style>
+      body {
+        background-color: #713b50;
+        font-family: Arial, sans-serif;
+        color: #59464a;
+        margin: 0;
+        padding: 30px;
+      }
+
+      h1 {
+        text-align: center;
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      .intro {
+        background-color: #f3e5d8;
+        padding: 15px;
+        text-align: center;
+        margin-bottom: 25px;
+        border: 5px solid #a86f7c;
+        line-height: 1.6;
+        font-size: 20px;
+      }
+
+      form {
+        background-color: #fffaf5;
+        padding: 25px;
+        border: 1px solid #e2c9c0;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      input,
+      textarea,
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 8px;
+        margin-bottom: 18px;
+        border: 1px solid #e2c9c0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      textarea {
+        height: 100px;
+      }
+
+      .rating {
+        margin-bottom: 18px;
+      }
+
+      .rating input {
+        width: auto;
+        margin-right: 5px;
+      }
+
+      button {
+        background-color: #a86f7c;
+        color: white;
+        padding: 12px 28px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 15px;
+      }
+
+      button:hover {
+        background-color: #542a3b;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>WE VALUE YOUR FEEDBACK</h1>
+
+    <div class="intro">
+      <p>
+        Your feedback helps us improve and serve you better. Please take a
+        moment to share your experience with us.
+      </p>
+    </div>
+
+    <form>
+      <label>Full Name:</label>
+      <input type="text" placeholder="Enter your name" />
+
+      <label>Email Address:</label>
+      <input type="email" placeholder="Enter your email" />
+
+      <label>How was your overall experience?</label>
+      <select>
+        <option>Select your experience</option>
+        <option>Excellent</option>
+        <option>Good</option>
+        <option>Average</option>
+        <option>Poor</option>
+      </select>
+
+      <label>Rate our service:</label>
+
+      <div class="rating">
+        <input type="radio" name="rating" /> Poor
+        <input type="radio" name="rating" /> Fair
+        <input type="radio" name="rating" /> Good
+        <input type="radio" name="rating" /> Very Good
+        <input type="radio" name="rating" /> Excellent
+      </div>
+
+      <label>What did you like about our service?</label>
+      <textarea placeholder="Share your thoughts..."></textarea>
+
+      <label>What can we improve?</label>
+      <textarea placeholder="Tell us how we can do better..."></textarea>
+
+      <label>Would you recommend us to others?</label>
+      <div class="rating">
+        <input type="radio" name="recommend" /> Yes
+        <input type="radio" name="recommend" /> No
+      </div>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </body>
+</html>
