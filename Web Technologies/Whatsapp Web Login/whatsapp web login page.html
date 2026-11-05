@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WhatsApp Web Login</title>
+
+    <style>
+      body {
+        background-color: #f0f2f5;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 30px;
+        color: #333333;
+      }
+
+      .container {
+        background-color: white;
+        margin-top: 50px;
+        width: 85%;
+        margin: auto;
+        padding: 40px;
+      }
+
+      .login-section {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 25px;
+      }
+
+      .instructions {
+        width: 55%;
+        line-height: 1.5;
+      }
+
+      .instructions h2 {
+        color: #222222;
+        font-size: 26px;
+        margin-bottom: 25px;
+      }
+
+      .step {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 15px;
+      }
+
+      .number {
+        border: 1px solid #777777;
+        border-radius: 50%;
+        width: 26px;
+        height: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        font-size: 14px;
+      }
+
+      .step p {
+        margin: 0;
+      }
+
+      .qr-section {
+        width: 40%;
+        text-align: center;
+      }
+
+      .qr-code img {
+        width: 220px;
+        height: 220px;
+      }
+
+      .phone-login {
+        text-align: right;
+        color: #128c7e;
+        margin-top: 35px;
+        font-weight: bold;
+      }
+
+      .phone-login a {
+        color: #128c7e;
+        text-decoration: none;
+      }
+
+      .phone-login a:hover {
+        color: #075e54;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="login-section">
+        <div class="instructions">
+          <h2>Log in to WhatsApp</h2>
+
+          <div class="step">
+            <span class="number">1</span>
+            <p>Open <b>WhatsApp</b> on your phone.</p>
+          </div>
+
+          <div class="step">
+            <span class="number">2</span>
+            <p>On Android tap <b>Menu</b>. On iPhone tap <b>Settings</b>.</p>
+          </div>
+
+          <div class="step">
+            <span class="number">3</span>
+            <p>Tap <b>Linked devices</b>, then <b>Link device</b>.</p>
+          </div>
+
+          <div class="step">
+            <span class="number">4</span>
+            <p>Scan the QR code to confirm.</p>
+          </div>
+        </div>
+
+        <div class="qr-section">
+          <div class="qr-code">
+            <img src="qr-code.png" alt="WhatsApp QR Code" />
+          </div>
+
+          <div class="phone-login">
+            <a href="#">Log in with phone number &#8250;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
