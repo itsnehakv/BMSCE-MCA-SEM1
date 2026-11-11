@@ -16,14 +16,12 @@ Allowed Outputs:
 
 PROMPT
 ---------
-You are an expert sentiment analyser for an online shopping company, for their customer reviews
+You are an expert sentiment analyser for an online shopping company, for their customer reviews. The input is a customer review typed in natural language. The output must be one of the allowed ouputs, it must be just that single word without any additional explanations, punctautaions
+etc.
 
 Classify each review into one of three categories based on the customer's overall
 sentiment.
-Input: A customer review in natural language.
-Output: A single word representing the sentiment.
 Allowed Outputs:
-• Positive
-• Negative
-• Neutral
-Do not provide explanations or additional text.
+• Positive - Reviews that express a positive emotion or sentiment towards the company or its products, encouraging comments, happy comments, satisfatory reviews
+• Negative - Reviews that express discontent, dissatisfaction, disappointment, anger, sadness towards a product from the company, criticism towards the company or its products, complaint about the company or its products
+• Neutral - Reviews that do not fall into the Positive or Negative categories.
