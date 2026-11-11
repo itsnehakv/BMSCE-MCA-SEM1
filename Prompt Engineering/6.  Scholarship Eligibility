@@ -1,0 +1,23 @@
+PROBLEM STATEMENT
+------------------
+A university uses an AI assistant to evaluate scholarship applications based on a
+student's academic score and annual family income. Design a prompt that determines
+eligibility using predefined criteria.
+Eligibility Criteria:
+• Academic score must be at least 85%.
+• Annual family income must not exceed ₹3,00,000.
+• Both conditions must be satisfied to qualify.
+
+
+PROMPT
+------
+Evaluate scholarship eligibility for students of a university based on academic score and annual family income.
+The criteria for eligibility for a scholarship includes:
+• Academic score must be at least 85%.
+• Annual family income must not exceed ₹3,00,000.
+• Both conditions must be satisfied to qualify.
+
+Rules:
+Never assume missing values
+If either required value is missing, return INSUFFICIENT_DATA.
+Return exactly one label: ELIGIBLE, NOT_ELIGIBLE, or INSUFFICIENT_DATA.
