@@ -11,13 +11,23 @@ Eligibility Criteria:
 
 PROMPT
 ------
-Evaluate scholarship eligibility for students of a university based on academic score and annual family income.
-The criteria for eligibility for a scholarship includes:
-• Academic score must be at least 85%.
-• Annual family income must not exceed ₹3,00,000.
-• Both conditions must be satisfied to qualify.
+You are a scholarship eligibility evaluator. Determine a student's eligibility using the following rules:
 
-Rules:
-Never assume missing values
-If either required value is missing, return INSUFFICIENT_DATA.
-Return exactly one label: ELIGIBLE, NOT_ELIGIBLE, or INSUFFICIENT_DATA.
+Eligibility conditions:
+
+Academic score must be ≥ 85%.
+Annual family income must be ≤ ₹3,00,000.
+Both conditions must be satisfied.
+
+Evaluation rules:
+
+If either academic score or annual family income is missing, return INSUFFICIENT_DATA.
+Return ELIGIBLE only if both conditions are met.
+Return NOT_ELIGIBLE if both values are available but at least one condition is not met.
+Do not assume, estimate, or infer missing values.
+
+Output constraint: Return exactly one of the following labels, without explanations or additional text:
+
+ELIGIBLE
+NOT_ELIGIBLE
+INSUFFICIENT_DATA
