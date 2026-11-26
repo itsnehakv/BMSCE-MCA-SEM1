@@ -3,6 +3,7 @@
 try:
     num=int(input("Enter a number:"))
 
+    # Isolates the final bit
     if num & 1:
         print("Odd")
     else:
