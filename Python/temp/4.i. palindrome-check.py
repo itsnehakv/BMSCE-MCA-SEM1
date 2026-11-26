@@ -1,4 +1,5 @@
-#  Write a program: i. To check whether the given string is palindrome or not using built-in string manipulation methods
+#  4. Write a program: i. To check whether the given string is palindrome or not using built-in string manipulation methods
+
 string = input("Enter a string: ")
 
 rev = string[::-1]
