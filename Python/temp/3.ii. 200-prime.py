@@ -1,4 +1,5 @@
-# Write a program to find sum of prime numbers till 200
+# 3. ii Write a program to find sum of prime numbers till 200
+
 sum=0
 for num in range(1,201):
     count=0;
