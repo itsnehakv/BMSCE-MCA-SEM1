@@ -24,7 +24,7 @@ Your task is to read the given query and classify it as SAFE or INJECTION.
 
 Input
 
-User Query: {query}
+User Query
 
 Rules
 
